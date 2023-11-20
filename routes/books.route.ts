@@ -104,33 +104,6 @@ booksRoute.post('/create-book', [verifyToken], async (req: any, res: Response) =
 
 });
 
-booksRoute.put('/update-book', [verifyToken], async (req: Request, res: Response) => {
-    const rawBook: InterfaceBooks = {}
-    rawBook.title = req.body.title;
-    rawBook.description = req.body.description;
-
-
-    if (Object.values(rawBook).every(validateFields)) {
-        try {
-            const book = await Books.findByIdAndUpdate({ _id: req.body._id }, rawBook, { new: true });
-            res.status(STATUSES[200].code).json({
-                status: STATUSES[200].status,
-                body: book
-            });
-        } catch (error) {
-            res.status(500).json({
-                status: STATUSES[500].status,
-                msg: STATUSES[500].msg
-            });
-        }
-    } else {
-        res.status(500).json({
-            status: STATUSES[500].status,
-            msg: "Todos los campos son necesarios"
-        });
-    }
-
-});
 
 booksRoute.delete('/delete-book', [verifyToken], async (req: Request, res: Response) => {
     const id = req.query.id;
