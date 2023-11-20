@@ -5,6 +5,7 @@ import Crons from './classes/cron';
 import express from 'express';
 import bcrypt from 'bcrypt';
 import authRoute from './routes/auth.route';
+import fileUpload from 'express-fileupload';
 import booksRoute from './routes/books.route';
 
 require('dotenv').config();
@@ -28,6 +29,8 @@ server.start(() => {
 //Morgan for logs of requests
 server.app.use(logger('common'));
 server.app.use(cors());
+
+server.app.use(fileUpload());
 
 //Body parser
 server.app.use(express.urlencoded({ extended: true }));

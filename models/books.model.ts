@@ -10,18 +10,10 @@ const booksScheme = new Schema(
             type: String,
             require: [true, 'Descripción es requerido']
         },
-        petitioner: {
+        path: {
             type: String,
-            require: [true, 'Solicitante es requerido']
-        },
-        rack: {
-            type: Number,
-            require: [true, 'Estante es requerido']
-        },
-        row: {
-            type: Number,
-            require: [true, 'Fila es requerido']
-        },
+            require: [true, 'Es necesario el path del libro']
+        }
     },
     { versionKey: false }
 );
@@ -34,18 +26,14 @@ booksScheme.pre<IBooks>('save', function (next) {
 export interface IBooks extends Document {
     title: string;
     description: string;
-    petitioner: string;
-    rack: string;
-    row: number
+    path: string;
 }
 
 export interface InterfaceBooks {
     id?: string
     title?: string;
     description?: string;
-    petitioner?: string;
-    rack?: number;
-    row?: number
+    path?: string;
 }
 
 

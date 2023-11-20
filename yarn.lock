@@ -39,6 +39,13 @@
     "@types/connect" "*"
     "@types/node" "*"
 
+"@types/busboy@*":
+  version "1.5.3"
+  resolved "https://registry.yarnpkg.com/@types/busboy/-/busboy-1.5.3.tgz#016c68692c767f0cf9d23c90a85a9c322f92cbc5"
+  integrity sha512-YMBLFN/xBD8bnqywIlGyYqsNFXu6bsiY7h3Ae0kO17qEuTjsqeyYMRPSUDacIKIquws2Y6KjmxAyNx8xB3xQbw==
+  dependencies:
+    "@types/node" "*"
+
 "@types/connect@*":
   version "3.4.36"
   resolved "https://registry.yarnpkg.com/@types/connect/-/connect-3.4.36.tgz#e511558c15a39cb29bd5357eebb57bd1459cd1ab"
@@ -53,6 +60,14 @@
   dependencies:
     "@types/node" "*"
 
+"@types/express-fileupload@^1.4.4":
+  version "1.4.4"
+  resolved "https://registry.yarnpkg.com/@types/express-fileupload/-/express-fileupload-1.4.4.tgz#14d302687f41fab48a4ef0362ce83958a3a4790c"
+  integrity sha512-kxCs5oJ40JPhvh3LpxCeGfuSZIl8/6bk85u1YqNcIbfQCmUm3u+Ao1oOiSt/VdbEPs+V3JQg8giqxAyqXlpbWg==
+  dependencies:
+    "@types/busboy" "*"
+    "@types/express" "*"
+
 "@types/express-serve-static-core@^4.17.33":
   version "4.17.37"
   resolved "https://registry.yarnpkg.com/@types/express-serve-static-core/-/express-serve-static-core-4.17.37.tgz#7e4b7b59da9142138a2aaa7621f5abedce8c7320"
@@ -62,6 +77,16 @@
     "@types/qs" "*"
     "@types/range-parser" "*"
     "@types/send" "*"
+
+"@types/express@*":
+  version "4.17.21"
+  resolved "https://registry.yarnpkg.com/@types/express/-/express-4.17.21.tgz#c26d4a151e60efe0084b23dc3369ebc631ed192d"
+  integrity sha512-ejlPM315qwLpaQlQDTjPdsUFSc6ZsP4AN6AlWnogPjQ7CVi7PYF3YVz+CY3jE2pwYf7E/7HlDAN0rV2GxTG0HQ==
+  dependencies:
+    "@types/body-parser" "*"
+    "@types/express-serve-static-core" "^4.17.33"
+    "@types/qs" "*"
+    "@types/serve-static" "*"
 
 "@types/express@^4.17.18":
   version "4.17.18"
@@ -132,10 +157,10 @@
     "@types/mime" "*"
     "@types/node" "*"
 
-"@types/uuid@^9.0.6":
-  version "9.0.6"
-  resolved "https://registry.yarnpkg.com/@types/uuid/-/uuid-9.0.6.tgz#c91ae743d8344a54b2b0c691195f5ff5265f6dfb"
-  integrity sha512-BT2Krtx4xaO6iwzwMFUYvWBWkV2pr37zD68Vmp1CDV196MzczBRxuEpD6Pr395HAgebC/co7hOphs53r8V7jew==
+"@types/uniqid@^5.3.4":
+  version "5.3.4"
+  resolved "https://registry.yarnpkg.com/@types/uniqid/-/uniqid-5.3.4.tgz#e5deca439a1db381e4692f7679ecf3d7f1264eb2"
+  integrity sha512-AgC+o3/8/QEHuU3w5w2jZ8auQtjSJ/s8G8RfEk9CYLogK1RGXqxhHH0wOEAu8uHXjvj8oh/dRtfgok4IHKxh/Q==
 
 "@types/webidl-conversions@*":
   version "7.0.1"
@@ -248,6 +273,13 @@ buffer-equal-constant-time@1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/buffer-equal-constant-time/-/buffer-equal-constant-time-1.0.1.tgz#f8e71132f7ffe6e01a5c9697a4c6f3e48d5cc819"
   integrity sha512-zRpUiDwd/xk6ADqPMATG8vc9VPrkck7T07OIx0gnjmJAnHnTVXNQG3vfvWNuiZIkwu9KrKdA1iJKfsfTVxE6NA==
+
+busboy@^1.6.0:
+  version "1.6.0"
+  resolved "https://registry.yarnpkg.com/busboy/-/busboy-1.6.0.tgz#966ea36a9502e43cdb9146962523b92f531f6893"
+  integrity sha512-8SFQbg/0hQ9xy3UNTB0YEnsNBbWfhf7RtnzpL7TkBiTBRfrQ9Fxcnz7VJsleJpyp6rVLvXiuORqjlHi5q+PYuA==
+  dependencies:
+    streamsearch "^1.1.0"
 
 bytes@3.1.2:
   version "3.1.2"
@@ -382,6 +414,13 @@ etag@~1.8.1:
   version "1.8.1"
   resolved "https://registry.yarnpkg.com/etag/-/etag-1.8.1.tgz#41ae2eeb65efa62268aebfea83ac7d79299b0887"
   integrity sha512-aIL5Fx7mawVa300al2BnEE4iNvo1qETxLrPI/o05L7z6go7fCw1J6EQmbK4FmJ2AS7kgVF/KEZWufBfdClMcPg==
+
+express-fileupload@^1.4.2:
+  version "1.4.2"
+  resolved "https://registry.yarnpkg.com/express-fileupload/-/express-fileupload-1.4.2.tgz#59f8ab14f9d12c4b53dfc29e56face4313ca0b59"
+  integrity sha512-vk+9cK595jP03T+YgoYPAebynVCZuUBtW1JkyJnitQnWzlONHdxdAIm9yo99V4viTEftq7MUfzuqmWyqWGzMIg==
+  dependencies:
+    busboy "^1.6.0"
 
 express@^4.18.2:
   version "4.18.2"
@@ -1050,6 +1089,11 @@ statuses@2.0.1:
   resolved "https://registry.yarnpkg.com/statuses/-/statuses-2.0.1.tgz#55cb000ccf1d48728bd23c685a063998cf1a1b63"
   integrity sha512-RwNA9Z/7PrK06rYLIzFMlaF+l73iwpzsqRIFgbMLbTcLD6cOao82TaWefPXQvB2fOC4AjuYSEndS7N/mTCbkdQ==
 
+streamsearch@^1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/streamsearch/-/streamsearch-1.1.0.tgz#404dd1e2247ca94af554e841a8ef0eaa238da764"
+  integrity sha512-Mcc5wHehp9aXz1ax6bZUyY5afg9u2rv5cqQI3mRrYkGC8rW2hM02jWuwjtL++LS5qinSyhj2QfLyNsuc+VsExg==
+
 "string-width@^1.0.2 || 2 || 3 || 4", string-width@^4.2.3:
   version "4.2.3"
   resolved "https://registry.yarnpkg.com/string-width/-/string-width-4.2.3.tgz#269c7117d27b05ad2e536830a8ec895ef9c6d010"
@@ -1110,6 +1154,11 @@ type-is@~1.6.18:
     media-typer "0.3.0"
     mime-types "~2.1.24"
 
+uniqid@^5.4.0:
+  version "5.4.0"
+  resolved "https://registry.yarnpkg.com/uniqid/-/uniqid-5.4.0.tgz#4e17bfcab66dfe33563411ae0c801f46ef964e66"
+  integrity sha512-38JRbJ4Fj94VmnC7G/J/5n5SC7Ab46OM5iNtSstB/ko3l1b5g7ALt4qzHFgGciFkyiRNtDXtLNb+VsxtMSE77A==
+
 unpipe@1.0.0, unpipe@~1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/unpipe/-/unpipe-1.0.0.tgz#b2bf4ee8514aae6165b4817829d21b2ef49904ec"
@@ -1129,11 +1178,6 @@ uuid@8.3.2:
   version "8.3.2"
   resolved "https://registry.yarnpkg.com/uuid/-/uuid-8.3.2.tgz#80d5b5ced271bb9af6c445f21a1a04c606cefbe2"
   integrity sha512-+NYs2QeMWy+GWFOEm9xnn6HCDp0l7QBD7ml8zLUmJ+93Q5NF0NocErnwkTkXVFNiX3/fpC6afS8Dhb/gz7R7eg==
-
-uuid@^9.0.1:
-  version "9.0.1"
-  resolved "https://registry.yarnpkg.com/uuid/-/uuid-9.0.1.tgz#e188d4c8853cc722220392c424cd637f32293f30"
-  integrity sha512-b+1eJOlsR9K8HJpow9Ok3fiWOWSIcIzXodvv0rQjVoOVNpWMpxf1wZNpt4y9h10odCNrqnYp1OBzRktckBe3sA==
 
 vary@^1, vary@~1.1.2:
   version "1.1.2"
