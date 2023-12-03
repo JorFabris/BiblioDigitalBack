@@ -78,6 +78,7 @@ booksRoute.post('/create-book', [verifyToken], async (req: any, res: Response) =
 
     rawBook.title = req.body.title;
     rawBook.description = req.body.description;
+    rawBook.section = req.body.section;
     rawBook.path = path;
 
     if (Object.values(rawBook).every(validateFields)) {
